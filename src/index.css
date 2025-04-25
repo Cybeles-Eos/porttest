@@ -1,0 +1,109 @@
+:root{
+  --dark-back: #08090B;
+  --dark-black: #040506;
+  --white: #DADADA;
+  --none: transparent;
+
+  --shadow: #f1f1f10e;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  cursor: none;
+}
+body, html{
+  background-color: var(--dark-back);
+  
+}
+
+
+.circle_size{
+  width: 3.2rem;
+  height: 3.2rem;
+  
+}
+.brd_rds_clr{
+  border: 3px solid var(--dark-black);
+  border-radius: 10rem;
+}
+
+.disable_unesary{
+  user-select: none;
+  -webkit-user-drag: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.rend_px{
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Cursor*/
+.cursor_dot{
+  width: 8px;
+  height: 8px;
+  background-color: rgb(228, 228, 228);
+}
+.cursor-outline{
+  width: 18px;
+  height: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.205);
+
+  background: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(2px); 
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  mix-blend-mode: difference;
+  transition: .2s;
+  transition-timing-function: ease;
+
+}
+.cursor-outline,
+.cursor_dot{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 1500;
+  pointer-events: none;
+}
+
+#character {
+  transform: scaleX(1);
+  width: 1.8rem;
+  height: 3.3rem;
+  position: fixed;
+  /* transition: transform 0.2s ease; */
+  transition-delay: 200ms;
+  z-index: 1200;
+}
+.face-left {
+  transform: scaleX(-1); /* flip to face left */
+}
+
+.budOff{
+  background-color: transparent;  
+}
+.budOn{
+  background-color: var(--white);
+}

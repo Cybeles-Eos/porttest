@@ -1,0 +1,10 @@
+.main{
+   height: 200vh;
+   width: 100%;
+   background-color: var(--dark-back);
+   color: rgb(210, 231, 250);
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}

@@ -1,0 +1,131 @@
+/*- Universal -*/
+.btn_icon{
+   background-color: var(--dark-black);
+   border-radius: 30rem;
+   width: 100%;
+   height: 100%;
+   border: none;
+   cursor: none;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+.nav{
+   width: 100%;
+   background-color: var(--dark-back);
+   padding: 20px 0 4px 0; 
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 1rem;
+}
+.music_resume{
+   display: flex;
+   gap: 9px;
+   align-items: center;
+}
+.music_box, .resume_box{
+   padding: 3px;
+   position: relative;
+   transition: 400ms;
+}
+
+
+
+.main_links{
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+.page_links_con{
+   width: 18rem;
+   height: 3rem;
+   padding: 3px;
+
+}
+.page_links{
+   width: 17.29rem;
+   height: 2.32rem;
+   background-color: var(--dark-black);
+   border-radius: 20rem;
+   
+   z-index: 500;
+   position: fixed;
+}
+ul{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 100%;
+   padding-inline: 1.8rem;
+   padding-bottom: 3px;
+}
+ul li{
+   list-style: none;
+   
+}
+ul li a{
+   color: var(--white);
+   text-decoration: none;
+   font-size: 13px;
+   font-weight: 300;
+   cursor: none;
+}
+ul li a:hover{
+   opacity: .8;
+}
+
+.fb_gHub_con{
+   display: flex;
+   align-items: center;
+   gap: 9px;
+}
+.fb_link, .gHub_link{
+   padding: 3px;
+   transition: 400ms;
+}.fb_link > button{
+   padding-top: 2px;
+}
+
+.fb_link:hover, .gHub_link:hover,
+.music_box:hover, .resume_box:hover{
+ 
+   background-color: var(--shadow);  
+}
+
+.clock{
+   position: fixed;
+   bottom: 1rem;
+   left: 1rem;
+   display: flex;
+   align-items: center;
+   gap: .6rem;
+}
+.clock > pre{
+   font-weight: 700;
+   color: var(--white);
+   font-size: 11px;
+   user-select: none;
+}
+.clock > button{
+   font-size: 10px;
+   font-weight: 500;
+   border-radius: 20px;
+   border: 1px solid var(--white);
+   width: 2.3rem;
+   padding: 2px 0;
+   letter-spacing: .5px;
+   transition: 200ms;
+   color: var(--white);
+   background-color: transparent;
+   user-select: none;
+}
+
+.clock > button:active{
+   scale: 1.18;
+   will-change: transform;
+   transform: translateZ(0);
+}
